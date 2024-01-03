@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+/* NAVIGATION */
+
+.NavBar {
+  height: 3.5rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #27272a;
+}
+
+.NavSearchWrapper {
+  height: 1.7rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  max-width: 480px;
+  flex: 1 1 0%;
+}
+.NavSearchIcon {
+  position: absolute;
+  left: 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.NavSearchInput {
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-weight: 500;
+  padding: 0.5rem;
+  padding-inline-start: 1.75rem;
+  background-color: #303030;
+  border-radius: 0.5rem;
+  border: 1px solid #616161;
+  gap: 0.375rem;
+}
+.NavSearchInput:hover {
+  border: 1px solid #e1e1e1;
+}
+.NavSearchInput:active,
+.NavSearchInput:focus {
+  border: 2px solid #fff;
+}
+.NavSearchInput:focus {
+  outline: none;
+}
+
+.NavUserWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.NavAlertBtn {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.375rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  background-color: #27272a;
+  border: none;
+}
+
+.NavAlertBtn:focus {
+  background-color: #656266;
+}
+
+.UserProfileBtn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+}
+.UserNameAbbr {
+  border-radius: 0.5rem;
+  background-color: #36FBA1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  text-align: center;
+  color: #00000066;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.UserNameAbbr:focus {
+  border: 1px solid #656266;
+}
+
+.hidden {
+  display: none;
+}
+
+/* NAVIGATION ENDS */
+
+/* MAIN: ADS CSS */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.AdsContainer {
+  padding: .75rem .5rem .75rem 1rem;
+  color: #fff;
+  
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .UserName {
+    display: inline;
+  }
+}
+
+
+
+
+
+.steps[open] {
+  background-color: #f3f3f3;
+}
+.setup[open] .rotate {
+  transform: rotateX(-180deg);
+}
+.ButtonLabelOne {
+  border-top: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  border-right: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  background: #404040;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333,
+    0px 2px 0px 0px #000;
+}
+.ButtonLabelOne:hover {
+  border-top: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  border-right: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  background: #2a2a2a;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333,
+    0px 2px 0px 0px #000;
+}
+.ButtonLabelOne:active {
+  background: #2b2b2b;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 3px 0px 0px #000 inset;
+}
+.ButtonLabelOne:focus {
+  border-top: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  border-right: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  border-left: 1.5px solid var(--stroke-light-100, rgba(255, 255, 255, 0.2));
+  background: #404040;
+  box-shadow: 0px 0px 0px 2.5px #005bd3, 0px 0px 0px 3px #fff,
+    0px 0px 0px 1.5px #333;
+}
+.ButtonLabelTwo {
+  display: flex;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+}
+.ButtonLabelTwo:hover {
+  background: #e7e7e7;
+}
+.ButtonLabelTwo:active {
+  background: #e0e0e0;
+}
+.ButtonLabelTwo:focus {
+  padding: 8px 14px;
+  border: 2px solid var(--states-focused, #005bd3);
+  background: #fff;
+}
+.ButtonLabelThree {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--White, #fff);
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+}
+.ButtonLabelThree:hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #f7f7f7;
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+}
+.ButtonLabelThree:active {
+  background: #f7f7f7;
+  box-shadow: 0px 2px 1.5px 0px #e2e2e2 inset;
+}
+.ButtonLabelThree:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 0px 3px #005bd3, 0px 0px 0px 1px #fff,
+    0px -1px 0px 0px #b5b5b5 inset;
+}
+
+.ComponentOne {
+  display: inline-flex;
+  padding: 2px 2px 2px 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--grey-grey-200, #303030);
+  color: var(--font-light, #e3e3e3);
+
+  /* Text-12/medium */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 15.6px */
+}
+.ComponentOne:hover {
+  background: var(--font-mid-2, #616161);
+}
+.ComponentOne:active {
+  background: var(--grey-grey-50, #656266);
+}
+.ComponentOne:focus {
+  background: var(--grey-grey-50, #656266);
+  box-shadow: 0px 0px 0px 3px #005bd3, 0px 0px 0px 1px #000;
+}
+.dark-circle {
+  filter: brightness(0.5);
+}
+
+@media screen and (max-width: 425px) {
+  .ComponentOne {
+    padding: 0;
+  }
+  .ComponentOne:focus {
+    background: none;
+    box-shadow: none;
+  }
+}
